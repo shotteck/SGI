@@ -8,8 +8,8 @@ $Animal=$_POST ['Animal'];
 if (isset($_POST['elemento1'])){
     $Particular=$_POST ['elemento1'];
 }
-if (isset($_POST['elemento2'])){
-$Empresa=$_POST ['elemento2'];
+if (isset($_POST['elemento1'])){
+$Empresa=$_POST ['elemento1'];
 }
 $Detalles=$_POST['Detalles'];
 $Pais=$_POST['Pais'];
@@ -25,7 +25,7 @@ if (isset($_POST['elemento1'])){
 echo ("<br>");
 echo $Particular;
 }
-if (isset($_POST['elemento2'])){
+if (isset($_POST['elemento1'])){
 echo ("<br>");
 echo $Empresa;
 }
