@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./resultadosdonaciones.php" method="post">
 
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Indique su nombre"><br>
+
+        <label for="nombre">Apellidos:</label>
+        <input type="text" id="Apellidos" name="apellidos" placeholder="Indique sus apellidos"><br>
+      
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Indique su email"><br>
+      
+        <label for="Telefono">Telefono:</label>
+        <input type="text" id="Telefono" name="telefono" placeholder="Indique su telefono"><br>
+
+        <label for="cantidad-dinero">Cantidad de dinero a donar:</label>
+        <input type="number" id="cantidad-dinero" name="cantidad-dinero"><br>
+      
+        <label for="tipo-comida">Tipo de comida a donar:</label>
+        <select id="tipo-comida" name="tipo-comida">
+        <option value="tipo-de-comida">Seleccionar tipo de comida</option>
+          <option value="humeda">Comida húmeda para perros o gatos</option>
+          <option value="seca">Comida seca para perros o gatos</option>
+          <option value="snacksygolosinas">Snacks y golosinas para perros o gatos</option>
+          <option value="exóticos">Alimentos para animales exóticos</option>
+        </select><br>
+      
+        <label for="cantidad-comida">Cantidad de comida a donar (Kg):</label>
+        <input type="number" id="cantidad-comida" name="cantidad-comida"><br>
+      
+        <input type="submit" value="Enviar donación">
+      </form>
+</body>
+</html>
