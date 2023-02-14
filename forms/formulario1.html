@@ -1,1 +1,36 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colabora con nosotros</title>
+</head>
+<body>
+    <h1>Colabora con nosotros:</h1>
+    <form action="resultado.php" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Indique su nombre"><br>
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido" placeholder="Indique su apellido"><br>
+        <label for="telefono">Telefono:</label><br>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" placeholder="Indique su telefono"><br>
+        <label for="email">Gmail:</label><br>
+        <input type="email" id="email" name="email"placeholder="tucorreo@gmail.com"><br>
+        <label for="dirección">Dirección:</label><br>
+        <input type="text" id="dirección" name="dirección" placeholder="Indique su dirección">
+        <p>Seleccione en que desea colaborar:</p>
+        <input type="checkbox" id="bar" name="servicio1" value="informar">
+        <label>Informar</label>
+        <input type="checkbox" id="piscina" name="servicio2" value="alimentacion de animales">
+        <label>Alimentación de animales</label>
+        <input type="checkbox" id="discoteca" name="servicio3" value="colocacion de almacen">
+        <label>Colocación de almacén</label><br><br>
+        <label>DNI del interesado:</label>
+        <input type="file" id="imagen" name="imagen"><br>
+        <br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Resetear">
+      </form> 
+</body>
+</html>
